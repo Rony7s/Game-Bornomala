@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This web site for simple Educational Technology game">
+    <meta name="keywords" content="HTMLGame,EdTechGame, JavaScriptGame, EdTech4, Rony Ahmmed EdTech-BDU">
+    <meta name="author" content="Md. Rony Ahmmed Shah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <link rel="stylesheet" href="index.css">
+    <title>বর্ণমালা 1.0</title>
+</head>
+<body>
+    <div class="main_menu">
+        <div class="user">
+            <img src="https://avatars.githubusercontent.com/u/30334499?v=4" alt="">
+            <h3>Rony Ahmmed</h3>
+            <p>B.Sc.(Honors) in Educational Technology | Web Developer</p>
+        </div>
+    
+        <ul class="navbar">
+            <li><a href="#home"><i class="fas fa-home"></i> home</a></li>
+            <li><a href="bornomala.html"><i class="fas fa-gamepad"></i> English Letter</a></li>
+            <li><a href="enNumber.html"><i class="fas fa-gamepad"></i> Numbers (সংখ্যা)</a></li>
+            <li><a href="bnVoule.html"><i class="fas fa-gamepad"></i> Vowels (স্বরবর্ণ)</a></li>
+            <li><a href="bnConsonant.html"><i class="fas fa-gamepad"></i> Consonants (ব্যঞ্জনবর্ণ)</a></li>
+            <li><a href="enNumber.html"><i class="fas fa-gamepad"></i> English Number</a></li>
+            <li><a href="PeriodicTable.html"><i class="fas fa-gamepad"></i>Periodic Table</a></li> 
+            <li><a href="https://www.facebook.com/Rony2x"><i class="fas fa-user-tie"></i>About</a></li> 
+        </ul>
+    
+    </div>
+    
+    <!-- user with menu ends -->
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>বর্ণমালা 1.0</h3>
+            <br>
+            <p>Rony Ahmmed EdTech-BDU</p>
+            <br>
+            <br>
+            <a href="bornomala.html" class="btn">Play Now</a>
+        </div>
+
+    </section>
+    
+
+    <div class="footer">Created by <a href="https://facebook.com/EdTech4">Rony Ahmmed</a> | all rights reserved </div>
+
+    <script>
+        let menu = document.querySelector('#menu-btn');
+            let header = document.querySelector('.main_menu');
+
+            menu.onclick = () => {
+                menu.classList.toggle('fa-times');
+                header.classList.toggle('active');
+            }
+ 
+    </script>
+
+
+</body>
+</html>

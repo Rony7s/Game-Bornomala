@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bornomala 1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1><a href="index.html" style="text-decoration: none; color: tomato;">Bornomala 1.0</a></h1>
+        <div class="gameArea">
+            <div class="gameTerminal">
+                <div class="boxT" id="gameLevel">Level :01</div>
+                <div class="boxT" id="gameTime">00.00.00</div>
+                <div class="boxT" id="gameScore">00</div>
+            </div>
+            <canvas id="gameBoard" width="300" height="300"></canvas>
+            <div id="gameControler">
+                <table>
+                    <tr><td></td><td><button type="button" id="gameMoveUp" class="btn" onclick="changeDirection(38)">Up</button></td><td></td></tr>
+                    <tr><td><button type="button" id="gameMoveLeft" class="btn"  onclick="changeDirection(37)">Left</button></td><td><button type="button" class="btn" id="gameStartPause">Start</button></td><td><button type="button" id="gameMoveRight" class="btn" onclick="changeDirection(39)">Right</button></td></tr>
+                    <tr><td></td><td><button type="button" id="gameMoveDown" class="btn" onclick="changeDirection(40)">Down</button></td><td></td></tr>
+                </table>
+                <br>
+                <br>
+                <a href="" class="btn" id="gameReset">Restart</a>
+                <br>
+                <p>Rony Ahmmed EdTech-BDU</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="bornomala.js"></script>
+</body>
+</html>

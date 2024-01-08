@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@200&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    list-style: none;
+}
+ 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+ 
+body{
+    padding-right: 30rem;
+}
+
+section{
+    min-height: 100vh;
+    padding:2rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:1rem 3.5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background: none;
+    color:black;
+    border:.1rem solid rgba(0,0,0,.2);
+}
+
+.btn:hover{
+    color:#990000;
+}
+ 
+
+.main_menu{
+    position: fixed;
+    top:0; right: 0;
+    z-index: 999;
+    width: 32rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    height: 100%;
+    padding:2rem;
+    text-align: center;
+    background-color:#FFF;
+}
+
+.main_menu .user img{
+    margin:1rem 0;
+    border:1rem solid transparent;
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+    border:.1rem solid rgba(0,0,0,.2);
+}
+
+.main_menu .user h3{
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main_menu .user p{
+    font-size: 1.5rem;
+}
+
+.main_menu .navbar{
+    padding-top: 1rem;
+}
+
+.main_menu .navbar a{
+    display: block;
+    margin:1.5rem 0;
+    padding:.7rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    color: #000;
+    border:.1rem solid rgba(0,0,0,.2);
+    text-align: left;
+    padding-left: 1em;
+}
+
+.main_menu .navbar a:hover{
+   
+    color: #000;
+}
+
+#menu-btn{
+    position: fixed;
+    top:1.5rem; right: 2rem;
+    z-index: 1000;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+}
+ 
+.home{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: -90px;
+}
+
+.home .content h3{
+    font-size: 7rem;
+    line-height: 1.1;
+    font-weight: 600;
+    font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+.home .content p{
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+
+.footer{
+    font-size: 2rem;
+    text-align: center;
+    padding:2.5rem 1rem;
+    margin-top: 1rem;
+    border-top: .1rem solid rgba(0,0,0,.2);
+    
+}
+
+.footer a{
+    color:black;
+}
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    body{
+        padding-right: 0;
+    }
+
+    .main_menu{
+        right:-110%;
+    }
+
+    .main_menu.active{
+        right:0%;
+        transition: .4s linear;
+    }
+
+    #menu-btn{
+        display: initial;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .main_menu{
+        width:100%;
+        border-right: 0;
+    }
+
+}
