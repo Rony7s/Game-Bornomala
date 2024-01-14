@@ -40,7 +40,8 @@ section{
 }
 
 .btn:hover{
-    color:#990000;
+    color: #FFF;
+	background:#000;
 }
  
 
@@ -92,7 +93,8 @@ section{
 
 .main_menu .navbar a:hover{
    
-    color: #000;
+    color: #FFF;
+	background:#000;
 }
 
 #menu-btn{
