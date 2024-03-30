@@ -7,6 +7,20 @@
         const resetBtn = document.getElementById("gameReset");
 
        const alphabet = ["অ","আ","ই","ঈ","উ","ঊ","ঋ","এ","ঐ","ও","ঔ"];
+
+       const imgBox =[
+        document.getElementById("img1"),
+        document.getElementById("img2"),
+        document.getElementById("img3"),
+        document.getElementById("img4"),
+        document.getElementById("img5"),
+        document.getElementById("img6"),
+        document.getElementById("img7"),
+        document.getElementById("img8"),
+        document.getElementById("img9"),
+        document.getElementById("img10"),
+        document.getElementById("img11")
+       ];
      
         const winPoints = 11;
 
@@ -84,6 +98,7 @@
         function drawFood() {
             ctx.font = "35px";
             ctx.fillStyle = "red";
+            ctx.drawImage(imgBox[score], 0, 0, 600, 400);
             ctx.fillText(alphabet[score], foodX+20, foodY+35);
             ctx.strokeRect(foodX, foodY, unitSize, unitSize);
         };

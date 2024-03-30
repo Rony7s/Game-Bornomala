@@ -7,6 +7,17 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.bornomal {
+    border-color: #ff9800;
+    color: orange;
+    margin: 10px;
+    width: 540px;
+  }
+
+.img_box img{
+    width: 10px;
+}
 #gameBoard{
     border: 1px solid black;
     margin: 5px;
