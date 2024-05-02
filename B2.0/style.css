@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Container{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bornomal {
+    border-color: #ff9800;
+    color: orange;
+    margin: 10px;
+    width: 540px;
+  }
+
+.img_box img{
+    width: 1px;
+    padding: 5px;
+    background-color: red;
+
+}
+#gameBoard{
+    border: 1px solid black;
+    margin: 5px;
+}
+.gameTerminal{
+    width: 600px;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    gap: 120px;
+}
+.boxT{
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.gameControler{
+    width: 610px;
+    text-align: center;
+}
+.btn {
+    width: 500px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+  }
+  
+  .btn_start {
+    border-color: #04AA6D;
+    color: green;
+    width: 600px;
+    margin: 5px;
+  }
+  
+  .btn_start:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  
+  .btn_restart {
+    border-color: #ff9800;
+    color: orange;
+    margin: 5px;
+    width: 540px;
+  }
+  
+  .btn_restart:hover {
+    background: #ff9800;
+    color: white;
+  }
